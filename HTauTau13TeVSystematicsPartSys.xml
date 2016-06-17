@@ -1,0 +1,207 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM 'WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+  <!-- pu_prw -->
+  <Systematic Name="pu_prw">
+    <SystematicNameInFile>pu_prw</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh15">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll15">MC</ApplyToInputSample>
+    <!--<ApplyToInputSample InputChannel="hh15">MC</ApplyToInputSample>-->
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!-- jet_{???}_{up/down} -->
+
+  <Systematic Name="jet_jes_groupednp1">
+    <SystematicNameInFile InputChannel="hh15">jet_grouped_np1</SystematicNameInFile>
+    <!--<SystematicNameInFile InputChannel="lh15">jet_grouped_np_1</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_groupednp1</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jes_groupednp1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jes_groupednp2">
+    <SystematicNameInFile InputChannel="hh15">jet_grouped_np2</SystematicNameInFile>
+    <!--<SystematicNameInFile InputChannel="lh15">jet_grouped_np_2</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_groupednp2</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jes_groupednp2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jes_groupednp3">
+    <SystematicNameInFile InputChannel="hh15">jet_grouped_np3</SystematicNameInFile>
+    <!--<SystematicNameInFile InputChannel="lh15">jet_grouped_np_3</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_groupednp3</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jes_groupednp3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jes_intercalib">
+    <SystematicNameInFile InputChannel="hh15">jet_eta_intercalib</SystematicNameInFile>
+    <!--<SystematicNameInFile InputChannel="lh15">jet_EtaIntercalib</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_etainter</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jes_etaintercalib</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np0">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_0</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp0</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np1">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_1</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp1</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np2">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_2</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp2</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np3">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_3</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp3</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np4">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_4</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp4</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np5">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_5</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp5</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np6">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_6</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp6</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np7">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_7</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp7</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="jet_jer_np8">
+    <!--<SystematicNameInFile InputChannel="lh15">jet_jer_np_8</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15">jet_jetnp8</SystematicNameInFile>-->
+    <SystematicNameInFile>jet_jer_np8</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <!--
+  <Systematic Name="met_softtrk_scale">
+    <SystematicNameInFile>met_softtrk_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="Run2">MC</ApplyToInputSample>
+    <ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+  -->
+
+  <Systematic Name="el_es_scale">
+    <!--<SystematicNameInFile InputChannel="lh15">eg_scale_all</SystematicNameInFile>-->
+    <!--<SystematicNameInFile InputChannel="ll15_boost_signal">eg_scale</SystematicNameInFile>
+    <SystematicNameInFile InputChannel="ll15_boost_top">eg_scale</SystematicNameInFile>
+    <SystematicNameInFile InputChannel="ll15_vbf_top">eg_scale</SystematicNameInFile>-->
+    <SystematicNameInFile>el_es_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="electron15">MC</ApplyToInputSample>
+    <!--<ApplyToInputSampleExcept InputChannel="ll15_boost_zll">MC</ApplyToInputSampleExcept>
+    <ApplyToInputSampleExcept InputChannel="ll15_vbf_zll">MC</ApplyToInputSampleExcept>-->
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_tes_detector">
+    <SystematicNameInFile>tau_tes_detector</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_tes_insitu">
+    <SystematicNameInFile>tau_tes_insitu</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_tes_model">
+    <SystematicNameInFile>tau_tes_model</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>FourVectorSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_eff_reco">
+    <SystematicNameInFile>tau_eff_reco</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_eff_eleolr">
+    <SystematicNameInFile>tau_eff_eleolr</SystematicNameInFile>
+    <ApplyToInputSample  InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="tau_eff_jetid">
+    <SystematicNameInFile>tau_eff_jetid</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="hadronic15">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic> 
+
+</WorkspaceBuilder>

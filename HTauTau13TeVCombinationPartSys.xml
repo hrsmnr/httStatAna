@@ -1,0 +1,188 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM 'WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+  <IncludeFile>HTauTau13TeVChannels.xml</IncludeFile>
+  <IncludeFile>HTauTauSamples.xml</IncludeFile>
+  <IncludeFile>HTauTau13TeVNormFactors.xml</IncludeFile>
+  <IncludeFile>HTauTau13TeVSystematicsPartSys.xml</IncludeFile>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationMVA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationBoostMVA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationVBFMVA">
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationCBA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboosttight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboostloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrtight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbflowdr_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationBoostCBA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboosttight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboostloose_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVCombinationVBFCBA">
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrtight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbflowdr_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLLCBA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLLBoostCBA">
+    <UseChannel>Htt_year2015_chanll_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catboost_regzll_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLLVBFCBA">
+    <UseChannel>Htt_year2015_chanll_catvbf_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanll_catvbf_regzll_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHMVA">
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHBoostMVA">
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHVBFMVA">
+    <UseChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHCBA">
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHBoostCBA">
+    <UseChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVLHVBFCBA">
+    <UseChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVHHMVA">
+    <UseChannel>Htt_year2015_chanhh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVHHBoostMVA">
+    <UseChannel>Htt_year2015_chanhh_catboost_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVVBFMVA">
+    <UseChannel>Htt_year2015_chanhh_catvbf_regsig_selMVA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catrest_regcontrol_selMVA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVHHCBA">
+    <UseChannel>Htt_year2015_chanhh_catboosttight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboostloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrtight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbflowdr_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVHHBoostCBA">
+    <UseChannel>Htt_year2015_chanhh_catboosttight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catboostloose_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <StatAnalysis Name="HTauTau13TeVHHVBFCBA">
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrtight_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbfhighdrloose_regsig_selCBA</UseChannel>
+    <UseChannel>Htt_year2015_chanhh_catvbflowdr_regsig_selCBA</UseChannel>
+  </StatAnalysis>
+
+  <NormFactor Name="SigXsecOverSM" Const="False" POI="True">
+    <NormFactorNameInFile>SigXsecOverSM</NormFactorNameInFile>
+    <ApplyToSample>Signaltautau</ApplyToSample>
+  </NormFactor>
+
+  <NormFactor Name="SigXsecOverSM_WW" Const="True">
+    <NormFactorNameInFile>SigXsecOverSM_WW</NormFactorNameInFile>
+    <ApplyToSample>SignalWW</ApplyToSample>
+  </NormFactor>
+
+</WorkspaceBuilder>
