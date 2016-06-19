@@ -5,7 +5,7 @@
 
 echo 'Started at '`date`'...'
 
-STATANADIR="${HOME}/atlas/StatAna/"
+STATANADIR=`dirname ${0}`
 ANAFWDIR="${HOME}/atlas/caf2016Jun01/"
 
 INPUT="${ANAFWDIR}/Htautau2015/share/output/bdt_wbinput.root"
@@ -13,7 +13,7 @@ WORKSPACE="default"
 REGION="HTauTau13TeVLHMVA"
 XMLFILE="WorkspaceBuilder/data/HTauTau13TeVCombinationPartSys.xml"
   
-CMDNAME=`basename $0`
+CMDNAME=`basename ${0}`
 usage() {
     echo "Usage: $CMDNAME [OPTIONS]"
     echo "  This script is for various statisitcal analyses."
@@ -217,7 +217,7 @@ if [ ${sflag} = "-s" ]
 then
     echo "Computing significance..."
     cd HbbTools
-    time python scripts/getSig.py ${WORKSPACE}/${REGION} 0 125 2>&1 | tee workspaces/${WORKSPACE}/${WORKSPACE}_sig.log
+    time python scripts/getSig.py ${WORKSPACE}/${REGION} 0 125 2>&1 | tee workspaces/${WORKSPACE}/${WORKSPACE}_Significance.log
     cd ../
 fi
 
@@ -246,7 +246,7 @@ if [ ${fflag} = "-f" ]
 then
     echo "Running FitCrossChecks..."
     cd NuisanceCheck
-    time root -q -b 'runFitCrossChecks.C("../workspaces/'${WORKSPACE}'/combined/125.root","../workspaces/"'${WORKSPACE}'"/fccs/")' 2>&1 | tee ../workspaces/${WORKSPACE}/${WORKSPACE}_FitCrossChecks.log
+    time root -q -b 'runFitCrossChecks.C("../workspaces/'${WORKSPACE}'/combined/125.root","../workspaces/'${WORKSPACE}'/fccs/")' 2>&1 | tee ../workspaces/${WORKSPACE}/${WORKSPACE}_FitCrossChecks.log
     time python root2html.py ../workspaces/${WORKSPACE}/fccs/FitCrossChecks.root 2>&1 | tee ../workspaces/${WORKSPACE}/${WORKSPACE}_FitCrossChecksHtml.log
     cd ../
 fi

@@ -43,6 +43,13 @@ make -j8
 cd ../
 svn co svn+ssh://svn.cern.ch/reps/atlasphys/Physics/StatForum/NuisanceCheck/tags/NuisanceCheck-00-00-05/ NuisanceCheck
 
+FILEDIR=`dirname ${0}`
+\cp ${FILEDIR}/HTauTau* ${FILEDIR}/../WorkspaceBuilder/data/
+\cp ${FILEDIR}/runStatAna.sh ${FILEDIR}/../
+cd HbbTools
+\ln -s ../workspaces workspaces
+cd ../
+
 ###############################################################################
 # Below command generates the macro to run FitCrossChecks
 ###############################################################################
@@ -102,6 +109,6 @@ Minoru Hirose (minoru.hirose@cern.ch)
 
 echo ''
 echo 'Install successfully finished.'
-echo '----------------------------------------------------------------------------------------'
-echo 'You have to modify ANAFWDIR to point your analysis framework directory for automatition.'
-echo '----------------------------------------------------------------------------------------'
+echo '------------------------------------------------------------------------------------------------'
+echo 'You may have to modify ANAFWDIR to point your analysis framework directory for automatition.'
+echo '------------------------------------------------------------------------------------------------'

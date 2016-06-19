@@ -1,0 +1,420 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM 'WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!-- //====================//
+       // Sample definitions //
+       //====================// -->
+  
+  <Data Name="Data">  <!-- works for 13 TeV -->
+    <InputData InputChannel="All">Data</InputData>
+  </Data>
+
+  <Sample Name="ggH125" StatError="False" Signal="True"> <!-- works for 13 TeV -->
+    <UseInputSample>ggH</UseInputSample>
+    <ApplyToChannel>ll15</ApplyToChannel>
+    <ApplyToChannel>lh15</ApplyToChannel>
+    <ApplyToChannel>hh15</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanlh_catvbf_regtop_selMVA</ApplyToChannel> not used in this channel-->
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+    <Tag>Signaltautau</Tag>
+  </Sample>
+  
+  <InputSample Name="ggH">  <!-- works for 13 TeV -->
+    <SampleNameInFile InputChannel="All">ggH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+  
+  <Sample Name="ggHWW" StatError="True" Signal="True"> <!-- only used in ll channel -->
+    <UseInputSample>ggHWW</UseInputSample>
+    <!-- <ApplyToChannel>ll15</ApplyToChannel> -->
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <Tag>SignalWW</Tag>
+  </Sample>
+
+  <InputSample Name="ggHWW"> <!-- only used in ll channel -->
+    <SampleNameInFile>ggHWW</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+  
+  <Sample Name="VBFH125" StatError="False" Signal="True">
+    <UseInputSample>VBFH</UseInputSample>
+    <ApplyToChannel>All</ApplyToChannel>
+    <Tag>Signaltautau</Tag>
+  </Sample>
+
+  <InputSample Name="VBFH">
+    <SampleNameInFile>VBFH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="VBFHWW" StatError="True" Signal="True"> <!-- only applied in ll -->
+    <UseInputSample>VBFHWW</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <!--<ApplyToChannel>ll15</ApplyToChannel>-->
+    <Tag>SignalWW</Tag>
+  </Sample>
+  
+  <InputSample Name="VBFHWW">
+    <SampleNameInFile>VBFHWW</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="WH125" StatError="False" Signal="True">
+    <UseInputSample>WH</UseInputSample>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanlh_catvbf_regtop_selMVA</ApplyToChannel> not used in this channel--> 
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+
+    <!--<ApplyToChannel>Htt_year2015_chanll_catboost_regsig_selMVA</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanll_catboost_regtop_selMVA</ApplyToChannel>-->
+    <!-- <ApplyToChannel>Htt_year2015_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2015_chanll_catvbf_regsig_selMVA</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanll_catvbf_regtop_selMVA</ApplyToChannel>-->
+    <!-- <ApplyToChannel>Htt_year2015_chanll_catvbf_regzll_selMVA</ApplyToChannel>-->
+    <Tag>Signaltautau</Tag>
+  </Sample>
+
+  <InputSample Name="WH">
+    <SampleNameInFile>WH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="WHWW" StatError="True" Signal="True"> <!-- only applied in ll -->
+    <UseInputSample>WHWW</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <Tag>SignalWW</Tag>
+  </Sample>
+  
+  <InputSample Name="WHWW">
+    <SampleNameInFile>WHWW</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+  
+  <Sample Name="ZH125" StatError="False" Signal="True">
+    <UseInputSample>ZH</UseInputSample>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanlh_catvbf_regtop_selMVA</ApplyToChannel> not used in this channel--> 
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanhh_catrest_regcontrol_selMVA</ApplyToChannel>
+
+    <!--<ApplyToChannel>Htt_year2015_chanll_catboost_regsig_selMVA</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanll_catboost_regtop_selMVA</ApplyToChannel>-->
+<!--    <ApplyToChannel>Htt_year2015_chanll_catboost_regzll_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2015_chanll_catvbf_regsig_selMVA</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanll_catvbf_regtop_selMVA</ApplyToChannel>-->
+<!--    <ApplyToChannel>Htt_year2015_chanll_catvbf_regzll_selMVA</ApplyToChannel> -->
+    <Tag>Signaltautau</Tag>
+  </Sample>
+
+  <InputSample Name="ZH">
+    <SampleNameInFile>ZH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+  
+  <Sample Name="ZHWW" StatError="True" Signal="True"> <!-- only applied in ll -->
+    <UseInputSample>ZHWW</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <Tag>SignalWW</Tag>
+  </Sample>
+  
+  <InputSample Name="ZHWW">
+    <SampleNameInFile>ZHWW</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Ztt" StatError="True" Signal="False"> <!-- apply to lh and hh channel only -->
+    <UseInputSample>Ztt</UseInputSample>
+    <ApplyToChannel>ll15</ApplyToChannel>
+    <ApplyToChannel>lh15</ApplyToChannel>
+    <ApplyToChannel>hh15</ApplyToChannel>
+    <!-- for ll run 1 us split up version -->
+    <ApplyToChannel>lh11</ApplyToChannel>
+    <ApplyToChannel>lh12</ApplyToChannel>
+    <ApplyToChannel>hh11</ApplyToChannel>
+    <ApplyToChannel>hh12</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Ztt">
+    <SampleNameInFile>Ztt</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zttee" StatError="True" Signal="False"> <!-- apply to ll Run 1 channels -->
+    <UseInputSample>Zttee</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+  </Sample>
+  
+  <InputSample Name="Zttee">
+    <SampleNameInFile>Zttee</SampleNameInFile>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zttem" StatError="True" Signal="False"> <!-- apply to ll Run 1 channels -->
+    <UseInputSample>Zttem</UseInputSample>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanll_catboost_regzll_selMVA</ApplyToChannel>
+       <ApplyToChannel>Htt_year2012_chanll_catboost_regzll_selMVA</ApplyToChannel>-->
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+       <ApplyToChannel>Htt_year2012_chanll_catvbf_regzll_selMVA</ApplyToChannel>-->
+  </Sample>
+  
+  <InputSample Name="Zttem">
+    <SampleNameInFile>Zttem</SampleNameInFile>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zttme" StatError="True" Signal="False"> <!-- apply to ll Run 1 channels -->
+    <UseInputSample>Zttme</UseInputSample>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catboost_regtop_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanll_catboost_regzll_selMVA</ApplyToChannel>
+       <ApplyToChannel>Htt_year2012_chanll_catboost_regzll_selMVA</ApplyToChannel>-->
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanll_catvbf_regtop_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanll_catvbf_regzll_selMVA</ApplyToChannel>
+       <ApplyToChannel>Htt_year2012_chanll_catvbf_regzll_selMVA</ApplyToChannel>-->
+  </Sample>
+  
+  <InputSample Name="Zttme">
+    <SampleNameInFile>Zttme</SampleNameInFile>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zttmm" StatError="True" Signal="False"> <!-- apply to ll Run 1 channels -->
+    <UseInputSample>Zttmm</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+  </Sample>
+  
+  <InputSample Name="Zttmm">
+    <SampleNameInFile>Zttmm</SampleNameInFile>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zll" StatError="True" Signal="False">
+    <UseInputSample>Zll</UseInputSample>
+    <ApplyToChannel>ll15</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2011_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2011_chanlh_catvbf_regtop_selMVA</ApplyToChannel> not used in this channel--> 
+    <ApplyToChannel>Htt_year2012_chanlh_catvbf_regtop_selMVA</ApplyToChannel>
+    <!--<ApplyToChannel>lh15</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</ApplyToChannel>-->
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</ApplyToChannel>-->
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</ApplyToChannel> <!-- negative events for Brian -->
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</ApplyToChannel>-->
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</ApplyToChannel>--> <!-- no events for Brian or Mohamad-->
+    <ApplyToChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</ApplyToChannel>-->
+    <ApplyToChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</ApplyToChannel><!-- no events for Brian -->
+  </Sample> 
+
+  <InputSample Name="Zll">
+    <SampleNameInFile InputChannel="All">Zll</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Top" StatError="True" Signal="False"> <!-- not applied in hh -->
+    <UseInputSample>Top</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <ApplyToChannel>ll15</ApplyToChannel>
+    <ApplyToChannel>lh11</ApplyToChannel>
+    <ApplyToChannel>lh12</ApplyToChannel>
+    <ApplyToChannel>lh15</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Top">
+    <SampleNameInFile>Top</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="VV" StatError="True" Signal="False">
+    <UseInputSample>VV</UseInputSample>
+    <ApplyToChannel>ll15</ApplyToChannel>
+    <ApplyToChannel>lh11</ApplyToChannel>
+    <ApplyToChannel>lh12</ApplyToChannel>
+  </Sample> <!-- for lh15 and hh15 this is included with others -->
+
+  <InputSample Name="VV">
+    <SampleNameInFile InputChannel="All">VV</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Fake" StatError="True" Signal="False">
+    <UseInputSample>Fake</UseInputSample>
+  </Sample>
+
+  <InputSample Name="Fake">
+    <SampleNameInFile InputChannel="All">Fake</SampleNameInFile>
+    <ApplyToInputChannel>ll11</ApplyToInputChannel>
+    <ApplyToInputChannel>ll12</ApplyToInputChannel>
+    <ApplyToInputChannel>ll15_boost_signal</ApplyToInputChannel>
+    <ApplyToInputChannel>ll15_boost_top</ApplyToInputChannel>
+    <!--<ApplyToInputChannel>ll15_boost_zll</ApplyToInputChannel> fake background is negligible and not provided according to e-mail by Luca 31.05.2016-->
+    <ApplyToInputChannel>ll15_vbf_signal</ApplyToInputChannel>
+    <ApplyToInputChannel>ll15_vbf_top</ApplyToInputChannel>
+    <ApplyToInputChannel>ll15_vbf_zll</ApplyToInputChannel>
+    <ApplyToInputChannel>lh11</ApplyToInputChannel>
+    <ApplyToInputChannel>lh12</ApplyToInputChannel>
+    <ApplyToInputChannel>lh15</ApplyToInputChannel>
+    <ApplyToInputChannel>hh11</ApplyToInputChannel>
+    <ApplyToInputChannel>hh12</ApplyToInputChannel>
+    <ApplyToInputChannel>hh15</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="OtherRun1" StatError="True" Signal="False"> <!-- only Run 1, not used in lh channel -->
+    <UseInputSample>OtherRun1</UseInputSample>
+    <ApplyToChannel>ll11</ApplyToChannel>
+    <ApplyToChannel>ll12</ApplyToChannel>
+    <ApplyToChannel>hh11</ApplyToChannel>
+    <ApplyToChannel>hh12</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="OtherRun1">  <!-- Run 1 -->
+    <SampleNameInFile InputChannel="All">Other</SampleNameInFile>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+<!--  <Sample Name="Others_hh" StatError="True" Signal="False"> 
+    <UseInputSample>Zll</UseInputSample>
+    <UseInputSample>Top</UseInputSample>
+    <UseInputSample>W</UseInputSample>
+    <UseInputSample>VV</UseInputSample>
+    <ApplyToChannel>hh15</ApplyToChannel>
+  </Sample> -->
+
+  <Sample Name="Others_lh" StatError="True" Signal="False"> <!-- Run 2 -->
+    <UseInputSample>W</UseInputSample>
+    <!--<UseInputSample>VV</UseInputSample> not available in Mohamad's input file -->
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regsig_selCBA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbfloose_regsig_selCBA</ApplyToChannel>--> <!-- no events for Mohamad in W only-->
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbftight_regsig_selCBA</ApplyToChannel>--> <!-- no events for Mohamad in W only-->
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regtop_selCBA</ApplyToChannel>
+    <!--<ApplyToChannel>Htt_year2015_chanlh_catvbf_regtop_selCBA</ApplyToChannel>--> <!-- no events for Mohamad in W only-->
+    <!--
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2015_chanlh_catvbf_regsig_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2015_chanlh_catboost_regtop_selMVA</ApplyToChannel>
+    <ApplyToChannel>Htt_year2015_chanlh_catvbf_regtop_selMVA</ApplyToChannel>
+    -->
+  </Sample>
+
+  <Sample Name="Others_hh" StatError="True" Signal="False"> <!-- Run 2 -->
+    <UseInputSample>Zll</UseInputSample>
+    <UseInputSample>Top</UseInputSample>
+    <UseInputSample>W</UseInputSample>
+    <UseInputSample>VV</UseInputSample>
+    <ApplyToChannel>hh15</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="W">
+    <SampleNameInFile InputChannel="All">W</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+</WorkspaceBuilder>

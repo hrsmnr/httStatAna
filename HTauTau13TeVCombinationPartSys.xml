@@ -2,7 +2,7 @@
 
 <WorkspaceBuilder>
   <IncludeFile>HTauTau13TeVChannels.xml</IncludeFile>
-  <IncludeFile>HTauTauSamples.xml</IncludeFile>
+  <IncludeFile>HTauTauSamplesPartSys.xml</IncludeFile>
   <IncludeFile>HTauTau13TeVNormFactors.xml</IncludeFile>
   <IncludeFile>HTauTau13TeVSystematicsPartSys.xml</IncludeFile>
 
